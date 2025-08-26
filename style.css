@@ -777,27 +777,20 @@ li:nth-child(2) {
   margin:10px auto;
   text-align: center;
 } 
-.hover-button{
-  position:relative;
+.hover-button {
+  position: relative;
   box-sizing: border-box;
-  background:rgba(255,255,255,0);
-  border:none;
+  background: rgba(255,255,255,0); /* keep background transparent */
+  border: 2px solid #40e0d0;      /* 👈 thin turquoise border */
   font-size: 1.5rem;
-  color:#40e0d0;
+  color: #40e0d0;
   transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  overflow:hidden;
+  overflow: hidden;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  width:200px;
-  height:200px;
-} 
+  width: 200px;
+  height: 200px;
+}
+
 .hover-button:before{
   --size:0;
   content:'';
@@ -821,8 +814,9 @@ li:nth-child(2) {
 .hover-button:hover:before{
   --size:200px;
 }
-.hover-button:hover{
-  color:#111;
+.hover-button:hover {
+  color: #111;
+  border-color: #04ccae; /* border turns dark with text */
   cursor: pointer;
 }
 .hover-button span{
