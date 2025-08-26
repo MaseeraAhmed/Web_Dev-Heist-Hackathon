@@ -215,10 +215,11 @@ section .title span::after{
   width:45%;
 }
 .about .left img{
-  height:400px;
+  /* height:400px; */
   width:400px;
   object-fit: cover;
-  border-radius: 12px;
+  /* border-radius: 12px; */
+  border: 2px solid transparent;
 }
 .about .about-details .right{
   width:55%;
@@ -294,10 +295,10 @@ section .button button:hover{
   flex-wrap: wrap;
   justify-content:space-between;
 }
-.skills-details .box{
+/* .skills-details .box{
   width:calc(100% / 2 - 20px);
-  margin:20px 0;
-}
+  margin:20px 0; 
+} */
 .skills-details .boxes .topic{
   font-size: 20px;
   color:var(--primary-color);
